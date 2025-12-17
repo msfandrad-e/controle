@@ -10,11 +10,11 @@ import io
 # =======================================================
 # Carregamento CSS (desativado para testes da aplicação)
 # ========================================================
-#def load_css():
-#    with open(".streamlit/style.css", "r", encoding="utf-8") as f:
-#        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+def load_css():
+    with open(".streamlit/style.css", "r", encoding="utf-8") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-#load_css()
+load_css()
 
 
 st.set_page_config(page_title="App Controle de Contratos", page_icon="📊", layout="wide")
