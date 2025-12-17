@@ -1,0 +1,14 @@
+/* 1) Seletores padrão do Streamlit (funciona na maioria das versões) */
+#MainMenu { display: none !important; }      /* menu das 3 bolinhas / hamburger */
+header { display: none !important; }         /* barra de topo (quando existir) */
+footer { display: none !important; }         /* rodapé do Streamlit (opcional) */
+
+/* 2) Seletores alternativos / data attributes (version-agnostic quando disponíveis) */
+[data-testid="stToolbar"] { display: none !important; }  /* toolbar superior (novas versões) */
+button[title="Rerun"] { display: none !important; }      /* botão de rerun, se visível */
+
+/* 3) Segurança extra — esconder qualquer elemento com texto "Deploy" ou ícone relacionado
+   (cuidado: esse seletor é genérico, só usar se necessário) */
+:root * {
+  /* não usar display:none globalmente — apenas como fallback para itens identificáveis */
+}
